@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 16, 2019
+ *      Author: xulingfeng
+ */
+
+#include <json/json.h>
+#include "type.h"
+
+
+
+int main(int argc, char *argv[]) {
+	if (argc < 2) {
+		printf("arg invalid\n");
+		exit(1);
+	}
+	ctx = malloc(sizeof(context_t));
+	if (ctx == NULL) {
+		printf("malloc failed\n");
+		exit(1);
+	}
+	parse_config(ctx, argv[0]);		//解析配置文件
+	exit(0);
+}

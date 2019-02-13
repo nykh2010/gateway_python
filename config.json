@@ -1,0 +1,42 @@
+{
+    "service": [
+        "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../dbservice/dbservice.py",
+        "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../logservice/bin/loger.py",
+        "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../webservice/app/server.py",
+        "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../application/mqtt_service/src/mqtt_client.py"
+    ],
+    "gateway": {
+        "GATEWAYID": "de9fad38-2544-11e9-81b9-4c0bbe2d8ca1"
+    },
+    "dbconfig": {
+        "DBPORT": 9000,
+        "DBIP": "locaservicelhost"
+    },
+    "logconfig": {
+        "LOGPORT": 9001,
+        "LOGIP": "locservicealhost",
+        "OUT": "stdouservicet",
+        "PRIORITY": "INFO",
+        "PACKAGE_INTERVAL": 1,
+        "LOGFILE_FOLDER": "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../logservice/bin\\log"
+    },
+    "systemconfig": {
+        "SYSPORT": 9002,
+        "SYSIP": "localhost",
+        "FIRMWARE_PATH": "c:\\Users\\xulf4\\Desktop\\\u591a\u529f\u80fd\u901a\u7528\u7f51\u5173\\gateway\\tools\\../systemservice"
+    },
+    "webconfig": {
+        "WEBPORT": 8080,
+        "WEBIP": "0.0.0.0",
+        "ACCOUNT": {
+            "USERNAME": "admin",
+            "PASSWD": "admin"
+        }
+    },
+    "uplinkconfig": {
+        "MQTT_PORT": 1883,
+        "MQTT_HOST": "localhost",
+        "UPLINK_IP": "localhost",
+        "UPLINK_PORT": 9003
+    }
+}

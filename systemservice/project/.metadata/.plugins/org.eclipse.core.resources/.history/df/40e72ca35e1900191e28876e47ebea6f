@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 16, 2019
+ *      Author: xulingfeng
+ */
+
+#include <json/json.h>
+
+int main(int argc, char *argv[]) {
+	if (argc < 2) {
+		printf("arg invalid\n");
+		exit(1);
+	}
+	parse_config()
+	exit(0);
+}

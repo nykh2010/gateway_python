@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 16, 2019
+ *      Author: xulingfeng
+ */
+#include "type.h"
+
+#define PATH	"/home/xulingfeng/gateway/config.json"
+
+int main(int argc, char *argv[]) {
+	if (argc < 2) {
+		printf("arg invalid\n");
+		exit(1);
+	}
+	ctx = malloc(sizeof(context_t));
+	if (ctx == NULL) {
+		printf("malloc failed\n");
+		exit(1);
+	}
+
+	parse_config(ctx, PATH);		//解析配置文件
+//	create_udp_server(ctx);			//创建UDP服务器
+//	start_service(ctx);				//打开服务
+
+	exit(0);
+}

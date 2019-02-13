@@ -1,0 +1,13 @@
+/*
+ * config.c
+ *
+ *  Created on: Jan 16, 2019
+ *      Author: xulingfeng
+ */
+#include "config.h"
+#include <json/json.h>
+
+void parse_config(context_t *ctx, char *path) {
+
+}
+

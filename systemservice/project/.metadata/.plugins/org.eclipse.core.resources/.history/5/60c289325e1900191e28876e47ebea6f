@@ -1,0 +1,11 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 16, 2019
+ *      Author: xulingfeng
+ */
+
+int main(int argc, char *argv[]) {
+
+	exit(0);
+}

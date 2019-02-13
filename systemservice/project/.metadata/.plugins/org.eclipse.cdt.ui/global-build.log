@@ -1,0 +1,56 @@
+15:45:48 **** Incremental Build of configuration Debug for project sysservice ****
+make all 
+Building target: sysservice
+Invoking: GCC C Linker
+gcc  -o "sysservice"  ./src/config.o ./src/main.o   -ljson
+Finished building target: sysservice
+ 
+15:46:03 **** Incremental Build of configuration Debug for project sysservice ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:38 **** Incremental Build of configuration Debug for project sysservice ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -I"/home/xulingfeng/gateway/systemservice/project/sysservice/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:18:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   printf("malloc failed\n");
+   ^
+../src/main.c:18:3: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/main.c:18:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/main.c:22:2: warning: implicit declaration of function ‘parse_config’ [-Wimplicit-function-declaration]
+  parse_config(ctx, PATH);  //解析配置文件
+  ^
+Finished building: ../src/main.c
+ 
+Building target: sysservice
+Invoking: GCC C Linker
+gcc  -o "sysservice"  ./src/config.o ./src/main.o   -ljson
+Finished building target: sysservice
+ 
+15:46:40 **** Incremental Build of configuration Debug for project sysservice ****
+make all 
+make: Nothing to be done for 'all'.
+15:53:21 **** Incremental Build of configuration Debug for project sysservice ****
+make all 
+Building file: ../src/config.c
+Invoking: GCC C Compiler
+gcc -I"/home/xulingfeng/gateway/systemservice/project/sysservice/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/config.d" -MT"src/config.o" -o "src/config.o" "../src/config.c"
+../src/config.c: In function ‘parse_config’:
+../src/config.c:16:14: warning: variable ‘config_list’ set but not used [-Wunused-but-set-variable]
+  array_list *config_list = NULL;
+              ^
+../src/config.c:14:9: warning: unused variable ‘size’ [-Wunused-variable]
+  size_t size = 0;
+         ^
+../src/config.c:13:8: warning: unused variable ‘data’ [-Wunused-variable]
+  char *data = NULL;
+        ^
+Finished building: ../src/config.c
+ 
+Building target: sysservice
+Invoking: GCC C Linker
+gcc  -o "sysservice"  ./src/config.o ./src/main.o   -ljson
+Finished building target: sysservice
+ 
